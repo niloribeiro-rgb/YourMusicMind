@@ -7,16 +7,19 @@ const musicsUrl = ["audio/musicaBaixo.mp3",
 const musicImage = ["https://img.youtube.com/vi/eteFo483GUs/maxresdefault.jpg",
     "https://img.youtube.com/vi/caM1MxmV3Ps/maxresdefault.jpg"]
 
-
+trocar(0)
 function trocar(index) {
     // alert(index)
 
-    musicaChoosed.innerHTML = `<div class="containerControl">
-        <div class="musicaChoosedImage" style="background-image: url(${musicImage[index]});"></div><audio controls>
+    musicaChoosed.innerHTML =
+        `<div class="containerControl">
+        <div class="musicaChoosedImage" style="background-image: url(${musicImage[index]});">
+        </div>
+        <audio controls>
             <source src="${musicsUrl[index]}" type="audio/mpeg">
             seu navegador nao suporta o audio
         </audio>
-    </div>`
+        </div>`
 }
 
 
