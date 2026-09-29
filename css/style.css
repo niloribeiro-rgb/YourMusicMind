@@ -4,22 +4,44 @@
     padding: 0;
 }
 
+.musicaChoosed{
+    width: 100vw;
+}
+
+.containerControl {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .musicContainer {
     width: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 40px;
-    background-color: black;
+    padding: 30px;
+    background-color: #121212;
 }
 
 .cardMusic {
     display: flex;
+    align-items: center;
     width: min-content;
+    width: 400px;
     gap: 10px;
     padding: 7px;
     background-color: #212121;
     border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.cardMusic:hover {
+    background-color: #1b1b1b;
+}
+
+.cardMusic:active {
+    background-color: #131313;
 }
 
 /* .cardMusic:active{
@@ -34,7 +56,43 @@
     height: 60px;
 }
 
+@media(max-width:400px) {
+    .musicaChoosed{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .musicaChoosedImage {
+        width: 80vw;
+        height: 80vw;
+    }
 
+    .musicContainer {
+        padding: 20px;
+        width: 100vw;
+    }
+
+    .cardMusic{
+        width: 100%;
+        /* background-color: aqua; */
+    }
+
+    .musicaChoosed audio {
+        width: 80vw;
+        /* background-color: orange; */
+    }
+}
+
+@media(min-width:401) {
+    .musicaChoosed audio {
+        width: auto;
+        background-color: aqua;
+
+    }
+    
+
+}
 
 .ativo {
     border: 3px solid blue;
@@ -46,7 +104,7 @@
     gap: 10px;
     padding: 20px;
     background-color: #212121;
-    
+
 }
 
 .musicaChoosedImage {
